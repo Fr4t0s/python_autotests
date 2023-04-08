@@ -13,4 +13,4 @@ def test_status_code():
 def test_pats_of_body(key,value):
     response = requests.get (f"{Url}trainers", params = {"trainer_id": 3768}
 )
-    assert response.json()[key] ==value
+    assert response.json()[key] == value
